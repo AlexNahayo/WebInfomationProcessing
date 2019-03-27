@@ -1,0 +1,18 @@
+
+/* button colours  */
+#calculateAv {
+  border: none;
+  color: white;
+  padding: 20px;
+  background: rgb(202, 60, 60); /* this is a maroon */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+/* header colour */
+#border {
+  background-color: lightgreen;
+}

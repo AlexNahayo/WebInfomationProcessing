@@ -1,0 +1,79 @@
+
+/* button colours  */
+#calculateAv {
+  border: none;
+  color: white;
+  padding: 20px;
+  background: rgb(202, 60, 60); /* this is a maroon */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+/* header colour */
+#border {
+  background-color: lightgreen;
+}
+
+#appendRow {
+   border: none;
+  color: white;
+  padding: 20px;
+  background: rgb(50, 205, 50);
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+#appendColumn {
+   border: none;
+  color: white;
+  padding: 20px;
+  background: rgb(0, 0, 128);
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+#saveTable {
+   border: none;
+  color: white;
+  padding: 20px;
+  background: rgb(139, 0, 139);
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+
+#readCookie {
+  border: none;
+  color: white;
+  padding: 20px;
+  background: rgb(0, 191, 255);
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+#loadCookie {
+  border: none;
+  color: white;
+  padding: 20px;
+  background: rgb(255, 69, 0);
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
