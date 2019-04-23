@@ -1,0 +1,192 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src ="navigate.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <h1 style="text-align: center">Learning Hiragana Made Easy </h1>   
+</head>
+<body>
+<!-- textbox jquery :https://stackoverflow.com/questions/19150406/javascript-jquery-change-table-cell-colors-upon-checkbox-click      -->
+<!-- SOUNDS, GIF'S AND STATIC Hiragana https://commons.wikimedia.org/wiki/Hiragana -->
+<!-- table: https://divtable.com/table-styler/https://divtable.com/table-styler/ -->
+<!-- table: https://www.tablesgenerator.com/html_tables -->
+        <div>
+            <div >  
+            <button  class="mbtn3">Start Quiz</button><br>
+            </div>
+        </div>
+        <div class ="quizTable">
+            <table class="center">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>a</th>
+                            <th>i</th>
+                            <th>u</th>
+                            <th>e</th>
+                            <th>o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <td><img class="gif" src="Media/img/a.png" onclick= "play42()">
+                                <audio id ="player_audio42" src="Media/sounds/a.mp3" ></audio><br><label ><input id="myCheckbok" type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>a</label></td>
+                            <td><img class="gif" src="Media/img/i.png" onclick= "play43()">
+                                <audio id ="player_audio43" src="Media/sounds/i.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>i</label></td>
+                            <td><img class="gif" src="Media/img/u.png" onclick= "play44()">
+                                <audio id ="player_audio44" src="Media/sounds/u.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');" />u</label></td>
+                            <td><img class="gif" src="Media/img/e.png" onclick= "play45()">
+                                <audio id ="player_audio45" src="Media/sounds/e.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>e</label></td>
+                            <td><img class="gif" src="Media/img/o.png" onclick= "play46()">
+                                <audio id ="player_audio46" src="Media/sounds/o.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>o</label></td>
+                        </tr>
+                        <tr>
+                            <th>K</th>
+                            <td><img class="gif" src="Media/img/ka.png" onclick= "play1()">
+                                <audio id ="player_audio1" src="Media/sounds/ka.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ka</label></td>
+                            <td><img class="gif" src="Media/img/ki.png" onclick= "play2()">
+                                <audio id ="player_audio2" src="Media/sounds/ki.mp3"  ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ki</label></td>
+                            <td><img class="gif" src="Media/img/ku.png" onclick= "play3()">
+                                <audio id ="player_audio3" src="Media/sounds/ku.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ku</label></td>
+                            <td><img class="gif" src="Media/img/ke.png" onclick= "play4()">
+                                <audio id ="player_audio4" src="Media/sounds/ke.mp3"  ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ke</label></td>
+                            <td><img class="gif" src="Media/img/ko.png" onclick= "play5()">
+                                <audio id ="player_audio5" src="Media/sounds/ko.mp3"  ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ko</label></td>
+                        </tr>
+                        <tr>
+                            <th>S</th>
+                            <td><img class="gif" src="Media/img/sa.png" onclick= "play6()" >
+                                <audio id ="player_audio6" src="Media/sounds/sa.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>sa</label></td>
+                            <td><img class="gif" src="Media/img/shi.png" onclick= "play7()">
+                                <audio id ="player_audio7" src="Media/sounds/shi.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>shi</label></td>
+                            <td><img class="gif" src="Media/img/su.png" onclick= "play8()" >
+                                <audio id ="player_audio8" src="Media/sounds/su.mp3"  ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>su</label></td>
+                            <td><img class="gif" src="Media/img/se.png" onclick= "play9()" >
+                                <audio id ="player_audio9" src="Media/sounds/se.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>se</label></td>
+                            <td><img class="gif" src="Media/img/so.png" onclick= "play10()" >
+                                <audio id ="player_audio10" src="Media/sounds/so.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>so</label></td>
+                        </tr>
+                        <tr>
+                            <th>T</th>
+                            <td><img class="gif" src="Media/img/ta.png" onclick= "play11()" >
+                                <audio id ="player_audio11" src="Media/sounds/ta.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ta</label></td>
+                            <td><img class="gif" src="Media/img/chi.png" onclick= "play12()">
+                                <audio id ="player_audio12" src="Media/sounds/chi.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>chi</label></td>
+                            <td><img class="gif" src="Media/img/tsu.png" onclick= "play13()">
+                                <audio id ="player_audio13" src="Media/sounds/tsu.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>tsu</label></td>
+                            <td><img class="gif" src="Media/img/te.png" onclick= "play14()">
+                                <audio id ="player_audio14" src="Media/sounds/te.mp3"  ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>te</label></td>
+                            <td><img class="gif" src="Media/img/to.png" onclick= "play15()" >
+                                <audio id ="player_audio15" src="Media/sounds/to.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>to</label></td>
+                        </tr>
+                        <tr>
+                            <th>N</th>
+                            <td><img class="gif" src="Media/img/na.png" onclick= "play16()">
+                                <audio id ="player_audio16" src="Media/sounds/na.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>na</label></td>
+                            <td><img class="gif" src="Media/img/ni.png" onclick= "play17()">
+                                <audio id ="player_audio17" src="Media/sounds/ni.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ni</label></td>
+                            <td><img class="gif" src="Media/img/nu.png" onclick= "play18()">
+                                <audio id ="player_audio18" src="Media/sounds/nu.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>nu</label></td>
+                            <td><img class="gif" src="Media/img/ne.png" onclick= "play19()">
+                                <audio id ="player_audio19" src="Media/sounds/ne.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ne</label></td>
+                            <td><img class="gif" src="Media/img/no.png" onclick= "play20()">
+                                <audio id ="player_audio20" src="Media/sounds/no.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>no</label></td>
+                        </tr>
+                        <tr>
+                            <th>H</th>
+                            <td><img class="gif" src="Media/img/ha.png" onclick= "play21()">
+                                <audio id ="player_audio21" src="Media/sounds/ha.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ha</label></td>
+                            <td><img class="gif" src="Media/img/hi.png" onclick= "play22()">
+                                <audio id ="player_audio22" src="Media/sounds/hi.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>hi</label></td>
+                            <td><img class="gif" src="Media/img/hu.png" onclick= "play23()">
+                                <audio id ="player_audio23" src="Media/sounds/hu.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>hu</label></td>
+                            <td><img class="gif" src="Media/img/he.png" onclick= "play24()">
+                                <audio id ="player_audio24" src="Media/sounds/he.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>he</label></td>
+                            <td><img class="gif" src="Media/img/ho.png" onclick= "play25()">
+                                <audio id ="player_audio25" src="Media/sounds/ho.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ho</label></td>
+                        </tr>
+                        <tr>
+                            <th>M</th>
+                            <td><img class="gif" src="Media/img/ma.png" onclick= "play26()">
+                                <audio id ="player_audio26" src="Media/sounds/ma.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ma</label></td>
+                            <td><img class="gif" src="Media/img/mi.png" onclick= "play27()">
+                                <audio id ="player_audio27" src="Media/sounds/mi.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>mi</label></td>
+                            <td><img class="gif" src="Media/img/mu.png" onclick= "play28()">
+                                <audio id ="player_audio28" src="Media/sounds/mu.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>mu</label></td>
+                            <td><img class="gif" src="Media/img/me.png" onclick= "play29()">
+                                <audio id ="player_audio29" src="Media/sounds/me.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>me</label></td>
+                            <td><img class="gif" src="Media/img/mo.png" onclick= "play30()">
+                                <audio id ="player_audio30" src="Media/sounds/mo.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>mo</label></td>
+                        </tr>
+                        <tr>
+                            <th>Y</th>
+                            <td><img class="gif" src="Media/img/ya.png" onclick= "play31()">
+                                
+                                <audio id ="player_audio31" src="Media/sounds/ya.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ya</label></td>
+                            <td></td>
+                            <td><img class="gif" src="Media/img/yu.png" onclick= "play32()">
+                                
+                                <audio id ="player_audio32" src="Media/sounds/yu.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>yu</label></td>
+                            <td></td>
+                            <td><img class="gif" src="Media/img/yo.png" onclick= "play33()">
+                                
+                                <audio id ="player_audio33" src="Media/sounds/yo.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>yo</label></td>
+                        </tr>
+                        <tr>
+                            <th>R</th>
+                            <td><img class="gif" src="Media/img/ra.png" onclick= "play34()">
+                                <audio id ="player_audio34" src="Media/sounds/ra.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ra</label></td>
+                            <td><img class="gif" src="Media/img/ri.png" onclick= "play35()">
+                                <audio id ="player_audio35" src="Media/sounds/ri.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ri</label></td>
+                            <td><img class="gif" src="Media/img/ru.png" onclick= "play36()">
+                                <audio id ="player_audio36" src="Media/sounds/ru.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ru</label></td>
+                            <td><img class="gif" src="Media/img/re.png" onclick= "play37()">
+                                <audio id ="player_audio37" src="Media/sounds/re.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>re</label></td>
+                            <td><img class="gif" src="Media/img/ro.png" onclick= "play38()">
+                                <audio id ="player_audio38" src="Media/sounds/ro.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>ro</label></td>
+                        </tr>
+                        <tr>
+                            <th>W</th>
+                            <td><img class="gif" src="Media/img/wa.png" onclick= "play39()">
+                                <audio id ="player_audio39" src="Media/sounds/wa.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>wa</label></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><img class="gif" src="Media/img/wo.png" onclick= "play40()"
+                                ><audio id ="player_audio40" src="Media/sounds/wo.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>wo</label></td>
+                        </tr>
+                        <tr>
+                            <th>N</th>
+                            <td colspan="5"><img class="gif" src="Media/img/n.png" onclick= "play41()">
+                                <audio id ="player_audio41" src="Media/sounds/n.mp3" ></audio><br><label ><input  type="checkbox" onclick="$(this).parents('td').css('background-color', $(this).is(':checked') ? 'green' : 'white');"/>n</label></td>
+                        </tr>
+                    </tbody>
+                    </table>
+    </div>
+    <div class="grid">
+        <div id="quiz">
+            <h1>Quiz</h1>
+            <hr style="margin-bottom: 20px">
+                    <p style="text-align:center;" id="question"></p>
+            <div class="buttons">
+                <!-- four options -->
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+            <hr style="margin-top: 50px">
+            <footer>
+                <p style="text-align:center;" id="progress"> Questions x of y </p>
+            </footer>
+        </div>
+    </div>  
+    <script src="quizController.js"></script>
+    <script src="question.js"></script>
+    <script src ="app.js">  </script>
+</body>
+</html>
